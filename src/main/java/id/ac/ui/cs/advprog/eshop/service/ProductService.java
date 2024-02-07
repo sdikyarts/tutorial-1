@@ -10,4 +10,6 @@ public interface ProductService {
     public Product findById(String productId);
 
     public Product edit(Product editedProduct);
+
+    public void delete(String productId);
 }

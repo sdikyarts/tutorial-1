@@ -38,4 +38,9 @@ public class ProductRepository {
         productData.set(editedProductIndex, editedProduct);
         return editedProduct;
     }
+
+    public void delete(String productId) {
+        Product deletedProduct = this.findbyId(productId);
+        productData.remove(deletedProduct);
+    }
 }
