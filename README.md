@@ -2,7 +2,7 @@
 
 ### Name: Yasmine Putri Viryadhani
 ### NPM: 2206081862
-### Class: Adpro A
+### Class: Adpro C
 
 # Tutorial 1
 ## Reflection 1
