@@ -34,6 +34,17 @@ public class ProductRepository {
     public Product edit(Product editedProduct) {
         String editedProductId = editedProduct.getProductId();
         Product foundProductInRepo = this.findbyId(editedProductId);
+
+        boolean isProductExist = true;
+
+        if (foundProductInRepo == null) {
+            isProductExist = false;;
+        }
+
+        if (!isProductExist) {
+            return null;
+        }
+
         int editedProductIndex = productData.indexOf(foundProductInRepo);
         productData.set(editedProductIndex, editedProduct);
         return editedProduct;
