@@ -19,4 +19,23 @@ public class ProductRepository {
     public Iterator<Product> findAll() {
         return productData.iterator();
     }
+
+    public Product findbyId(String productId) {
+        Iterator<Product> productIterator = this.findAll();
+        while (productIterator.hasNext()) {
+            Product productMetadata = productIterator.next();
+            if (productMetadata.getProductId().equals(productId)) {
+                return productMetadata;
+            }
+        }
+        return null;
+    }
+
+    public Product edit(Product editedProduct) {
+        String editedProductId = editedProduct.getProductId();
+        Product foundProductInRepo = this.findbyId(editedProductId);
+        int editedProductIndex = productData.indexOf(foundProductInRepo);
+        productData.set(editedProductIndex, editedProduct);
+        return editedProduct;
+    }
 }
