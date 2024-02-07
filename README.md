@@ -1,4 +1,4 @@
-# AdPro 2023-2024/2
+# Advanced Programming 2023-2024/2
 
 ### Name: Yasmine Putri Viryadhani
 ### NPM: 2206081862
