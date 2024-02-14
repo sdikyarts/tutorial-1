@@ -20,3 +20,8 @@ I have yet to implement secure coding because I haven't learned how to implement
 ## Reflection 2
 1. After writing unit tests, I feel really exhausted since we have to debug our code to find what error is inside our **main**. The test amounts in a Class depend on how complex our code is. 100% Code Coverage doesn't guarantee that the code has no bugs or errors.
 2. Suppose we make a functional test to check the number of items in the new class but use the same setups. It will affect the clean code and make it look filthy since we have indirectly "duplicated" the existing code and reduced its quality. To fix that, we need to make reusable setups and instance variables. For example, we can make a superclass so that we can extend the class without worrying about duplicating the code.
+
+
+# Tutorial 2
+1. I haven"t finished doing the task because I'm having a bad health condition during the job, so i just tried deploying it. I will try to fix it on the next tutorial.
+2. My codes haven't met the clean code principles yet, but I will try to fix it on the next tutorial. Some of my coverage didn't cover 100% because I haven't implemented the error handling yet. Plus, due to time limitation, my build and deployment failed but it still has a proof. Despite I will get low score for this tutorial, I'm sure on the next tutorial, I will catch up.
